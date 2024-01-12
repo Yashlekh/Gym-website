@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Css/style.css">
+<style>
+    /* Css reset */
+    body {
+        font-family: 'Signika Negative', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(IMG/woman-1284656_1280.jpg);
+        height: 1250px;
+
+    }
+
+    .left {
+        /* border: 2px solid blue; */
+
+        display: inline-block;
+        position: absolute;
+        left: 32px;
+        top: 10px;
+        /* background-color: #f5c0d1; */
+    }
+
+    .left div {
+        line-height: 20px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(255, 0, 208); */
+        display: block;
+        width: 43%;
+        margin: 10px auto;
+
+    }
+
+    .right {
+        /* border: 2px solid rgb(255, 102, 0); */
+        display: inline-block;
+        position: absolute;
+        right: 32px;
+        top: 10px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 25px 15px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(107, 62, 62);
+    }
+
+    img {
+        height: 63px;
+        width: 163px;
+
+        /* filter: invert(); */
+
+    }
+
+    .btn {
+        font-family: 'Signika Negative', sans-serif;
+        background-color: #c3c3c3;
+        padding: 8px 15px;
+        /* border-color: #abcba1; */
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px 6px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid rgb(10, 9, 9);
+        margin: 90px 0px;
+        padding: 31px 44px;
+        border-radius: 24px;
+        width: 40%;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 240px;
+        border: 2px solid black;
+        margin: 10px auto;
+        padding: 8px 2px;
+        border-radius: 14px;
+        font-size: 17px;
+        font-family: 'Signika Negative', sans-serif;
+    }
+
+    .container button {
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        display: block;
+        width: 150px;
+        margin: 15px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- Left box for logo -->
+            <img src="IMG/gym-high-resolution-logo-black-on-transparent-background.png" alt="">
+        </div>
+        <div class="mid">
+            <!-- mid box for navigation -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of the Jhansi Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter the Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter the Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter the Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter the Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter the Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter the Phone no">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>
